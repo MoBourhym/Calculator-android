@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Base calculator button style -->
+    <style name="CalcButtonBase">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_columnWeight">1</item>
+        <item name="android:layout_rowWeight">1</item>
+        <item name="android:layout_margin">4dp</item>
+        <item name="android:textSize">26sp</item>
+        <item name="android:stateListAnimator">@null</item>
+    </style>
+
+    <!-- Style for action buttons (AC, +/-, %) -->
+    <style name="CalcButtonAction" parent="CalcButtonBase">
+        <item name="backgroundTint">@color/buttonAction</item>
+        <item name="android:backgroundTint">#911AFD</item>
+        <item name="android:background">@drawable/button_circle</item>
+        <item name="android:textColor">@color/appBackground</item>
+    </style>
+
+    <!-- Style for operation buttons (+, -, x, /, =) -->
+    <style name="CalcButtonAction2" parent="CalcButtonBase">
+        <item name="backgroundTint">#C33246F8</item>
+        <item name="android:backgroundTint">@color/buttonAction2</item>
+        <item name="android:background">@drawable/button_circle</item>
+        <item name="android:textColor">@color/appBackground</item>
+        <item name="android:textSize">35sp</item>
+    </style>
+
+    <!-- Style for number buttons (1-9, ,) -->
+    <style name="CalcButtonNumber" parent="CalcButtonBase">
+        <item name="backgroundTint">@color/buttonNumber</item>
+        <item name="android:backgroundTint">@color/buttonNumber</item>
+        <item name="android:background">@drawable/button_circle</item>
+        <item name="android:textColor">@color/buttonText</item>
+
+    </style>
+
+    <!-- Style for zero button (spans 2 columns) -->
+    <style name="CalcButtonNumberZero" parent="CalcButtonNumber">
+        <item name="android:layout_columnSpan">2</item>
+        <item name="android:layout_columnWeight">2</item>
+        <item name="android:background">@drawable/button_pill</item>
+    </style>
+
+</resources>

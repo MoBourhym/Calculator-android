@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="CalcButtonBase">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_columnWeight">1</item>
+        <item name="android:layout_rowWeight">1</item>
+        <item name="android:layout_margin">4dp</item>
+        <item name="android:padding">8dp</item>
+<item name="android:gravity">center</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:stateListAnimator">@null</item>
+    </style>
+
+    <!-- Style for action buttons (AC, +/-, %) -->
+    <style name="CalcButtonAction3" parent="CalcButtonBase">
+        <item name="backgroundTint">@color/colorPrimary</item>
+        <item name="android:background">@drawable/button_circle</item>
+        <item name="android:textColor">@color/appBackground</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="CalcButtonAction2" parent="CalcButtonBase">
+
+        <item name="android:backgroundTint">#FB0000</item>
+        <item name="android:background">@drawable/button_circle</item>
+        <item name="android:textColor">@color/displayText</item>
+        <item name="android:textSize">20sp</item> <!-- Reduced from 35sp to fit landscape mode better -->
+    </style>
+
+    <style name="CalcButtonAction" parent="CalcButtonBase">
+        <item name="backgroundTint">#9DA6EF</item>
+        <item name="android:background">@drawable/button_circle</item>
+        <item name="android:textColor">@color/buttonText</item>
+    </style>
+
+    <!-- Style for number buttons (1-9, ,) -->
+    <style name="CalcButtonNumber" parent="CalcButtonBase">
+        <item name="backgroundTint">#C9A8A8A8</item>
+        <item name="android:backgroundTint">@color/buttonNumber</item>
+        <item name="android:background">@drawable/button_circle</item>
+        <item name="android:textColor">@color/buttonText</item>
+        <item name="android:textSize">26sp</item> <!-- Reduced from 35sp to fit landscape mode better -->
+    </style>
+</resources>

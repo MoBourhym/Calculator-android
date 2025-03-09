@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- App color palette -->
+    <color name="colorPrimary">#FF9500</color>
+    <color name="colorPrimaryDark">#F08300</color>
+    <color name="colorAccent">#E2C889FF</color>
+    <color name="green">#00ff00</color>
+    <!-- Calculator specific colors -->
+    <color name="displayBackground">#FFFFFF</color>
+    <color name="displayText">#000000</color>
+    <color name="appBackground">#F0F0F0</color>
+
+    <!-- Button colors -->
+    <color name="buttonAction">#2AE9FA</color>     <!-- Gray for AC, +/-, % -->
+    <color name="buttonAction2">#3246F8</color>    <!-- Orange for +, -, x, /, = -->
+    <color name="buttonNumber">#A8A8A8</color>     <!-- Dark gray for numbers -->
+    <color name="buttonText">#000000</color>       <!-- White text for all buttons -->
+
+    <!-- Ripple effect color -->
+    <color name="rippleEffect">#33FFFFFF</color>   <!-- Semi-transparent white -->
+</resources>

@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/display"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/screen"
+        android:backgroundTint="#F38900FB"
+        android:layout_margin="6dp"
+        android:gravity="end"
+        android:padding="25dp"
+        android:textSize="32sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:useDefaultMargins="true"
+        android:columnCount="10"
+        android:padding="4dp"
+        android:rowCount="5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/display">
+
+        <!-- Row 1: Scientific functions -->
+        <Button
+            android:id="@+id/btnSecond"
+            style="@style/CalcButtonAction"
+            android:text="2ⁿᵈ" />
+
+        <Button
+            android:id="@+id/btnXSquared"
+            style="@style/CalcButtonAction"
+            android:text="x²" />
+
+        <Button
+            android:id="@+id/btnXCubed"
+            style="@style/CalcButtonAction"
+            android:text="x³" />
+
+        <Button
+            android:id="@+id/btnXPower"
+            style="@style/CalcButtonAction"
+            android:text="xʸ" />
+
+        <Button
+            android:id="@+id/btnExponent"
+            style="@style/CalcButtonAction"
+            android:text="eˣ" />
+
+        <Button
+            android:id="@+id/btn10Power"
+            style="@style/CalcButtonAction"
+            android:text="10ˣ" />
+
+        <Button
+            android:id="@+id/btnAC"
+            style="@style/CalcButtonAction3"
+            android:text="AC" />
+
+        <Button
+            android:id="@+id/btnPlusMinus"
+            style="@style/CalcButtonAction3"
+            android:text="+/-" />
+
+        <Button
+            android:id="@+id/btnPercent"
+            style="@style/CalcButtonAction3"
+            android:text="%" />
+
+        <Button
+            android:id="@+id/btnDivide"
+            style="@style/CalcButtonAction2"
+            android:text="÷" />
+
+        <!-- Row 2: More scientific functions -->
+        <Button
+            android:id="@+id/btn1DivX"
+            style="@style/CalcButtonAction"
+            android:text="1/x" />
+
+        <Button
+            android:id="@+id/btnSqrt"
+            style="@style/CalcButtonAction"
+            android:text="√" />
+
+        <Button
+            android:id="@+id/btnCbrt"
+            style="@style/CalcButtonAction"
+            android:text="∛" />
+
+        <Button
+            android:id="@+id/btnYRootX"
+            style="@style/CalcButtonAction"
+            android:text="ʸ√x" />
+
+        <Button
+            android:id="@+id/btnLn"
+            style="@style/CalcButtonAction"
+            android:text="ln" />
+
+        <Button
+            android:id="@+id/btnLog"
+            style="@style/CalcButtonAction"
+            android:text="log₁₀" />
+
+        <Button
+            android:id="@+id/btn7"
+            style="@style/CalcButtonNumber"
+            android:text="7" />
+
+        <Button
+            android:id="@+id/btn8"
+            style="@style/CalcButtonNumber"
+            android:text="8" />
+
+        <Button
+            android:id="@+id/btn9"
+            style="@style/CalcButtonNumber"
+            android:text="9" />
+
+        <Button
+            android:id="@+id/btnMultiply"
+            style="@style/CalcButtonAction2"
+            android:text="×" />
+
+        <!-- Row 3: Trigonometric functions -->
+        <Button
+            android:id="@+id/btnX"
+            style="@style/CalcButtonAction"
+            android:text="x!" />
+
+        <Button
+            android:id="@+id/btnSin"
+            style="@style/CalcButtonAction"
+            android:text="sin" />
+
+        <Button
+            android:id="@+id/btnCos"
+            style="@style/CalcButtonAction"
+            android:text="cos" />
+
+        <Button
+            android:id="@+id/btnTan"
+            style="@style/CalcButtonAction"
+            android:text="tan" />
+
+        <Button
+            android:id="@+id/btnE"
+            style="@style/CalcButtonAction"
+            android:text="e" />
+
+        <Button
+            android:id="@+id/btnEE"
+            style="@style/CalcButtonAction"
+            android:text="EE" />
+
+        <Button
+            android:id="@+id/btn4"
+            style="@style/CalcButtonNumber"
+            android:text="4" />
+
+        <Button
+            android:id="@+id/btn5"
+            style="@style/CalcButtonNumber"
+            android:text="5" />
+
+        <Button
+            android:id="@+id/btn6"
+            style="@style/CalcButtonNumber"
+            android:text="6" />
+
+        <Button
+            android:id="@+id/btnMinus"
+            style="@style/CalcButtonAction2"
+            android:text="-" />
+
+        <!-- Row 4: Hyperbolic functions -->
+        <Button
+            android:id="@+id/btnRad"
+            style="@style/CalcButtonAction"
+            android:text="Rad" />
+
+        <Button
+            android:id="@+id/btnSinh"
+            style="@style/CalcButtonAction"
+            android:text="sinh" />
+
+        <Button
+            android:id="@+id/btnCosh"
+            style="@style/CalcButtonAction"
+            android:text="cosh" />
+
+        <Button
+            android:id="@+id/btnTanh"
+            style="@style/CalcButtonAction"
+            android:text="tanh" />
+
+        <Button
+            android:id="@+id/btnPi"
+            style="@style/CalcButtonAction"
+            android:text="π" />
+
+        <Button
+            android:id="@+id/btnRand"
+            style="@style/CalcButtonAction"
+            android:text="Rand" />
+
+        <Button
+            android:id="@+id/btn1"
+            style="@style/CalcButtonNumber"
+            android:text="1" />
+
+        <Button
+            android:id="@+id/btn2"
+            style="@style/CalcButtonNumber"
+            android:text="2" />
+
+        <Button
+            android:id="@+id/btn3"
+            style="@style/CalcButtonNumber"
+            android:text="3" />
+
+        <Button
+            android:id="@+id/btnPlus"
+            style="@style/CalcButtonAction2"
+            android:text="+" />
+
+        <!-- Row 5: Memory and special functions -->
+        <Button
+            android:id="@+id/btnMC"
+            style="@style/CalcButtonAction"
+            android:text="mc" />
+
+        <Button
+            android:id="@+id/btnMPlus"
+            style="@style/CalcButtonAction"
+            android:text="m+" />
+
+        <Button
+            android:id="@+id/btnMMinus"
+            style="@style/CalcButtonAction"
+            android:text="m-" />
+
+        <Button
+            android:id="@+id/btnMR"
+            style="@style/CalcButtonAction"
+            android:text="mr" />
+
+        <Button
+            android:id="@+id/btnAns"
+            style="@style/CalcButtonAction"
+            android:text="Ans" />
+
+        <Button
+            android:id="@+id/btnDel"
+            style="@style/CalcButtonAction"
+            android:text="DEL" />
+
+        <Button
+            android:id="@+id/btn0"
+            style="@style/CalcButtonNumber"
+            android:layout_columnSpan="2"
+            android:layout_gravity="fill"
+            android:text="0" />
+
+        <Button
+            android:id="@+id/btnDecimal"
+            style="@style/CalcButtonNumber"
+            android:text="." />
+
+        <Button
+            android:id="@+id/btnEquals"
+            style="@style/CalcButtonAction2"
+            android:text="=" />
+    </GridLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
