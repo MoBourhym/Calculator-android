@@ -5,9 +5,9 @@
 A feature-rich calculator application for Android that intelligently handles device orientation changes. The app showcases effective use of Android Intents for communication between different layouts in portrait and landscape modes.
 
 
-[UI 1](LSUI.png)
+![UI 1](LSUI.png)
 
-[UI 1](PorUI.png)
+![UI 2](PorUI.png)
 
 ## Features
 
